@@ -26,4 +26,7 @@ vim.opt.smarttab = true
 
 vim.opt.mouse = ""
 
+-- update time for git gutter
+vim.opt.updatetime = 2000
+
 vim.opt.wildignore:append({ "*/node_modules/*" })
