@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+-- Hack fonts only can setting with the gui, example iterm2, termial, or like window we have powershell
+
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
