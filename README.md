@@ -12,3 +12,7 @@ Install packer, :so to packer.lua and PackerSync for install
 - ssh-agent bash
 - ssh-add [file]
 
+# LSP
+- Docs in here with setting and key map
+https://github.com/VonHeikemen/lsp-zero.nvim
+- when you want to show errors diagnotics using [gl], when you want show definition [K]
