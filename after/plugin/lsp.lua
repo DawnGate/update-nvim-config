@@ -5,7 +5,10 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 
 local cmp = require('cmp')
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
+
+local cmp_select = {
+	behavior = cmp.SelectBehavior.Select
+}
 
 local cmp_mappings = lsp_zero.defaults.cmp_mappings({
   ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
@@ -13,6 +16,7 @@ local cmp_mappings = lsp_zero.defaults.cmp_mappings({
   ['<C-y>'] = cmp.mapping.confirm({ select = true }),
   ["<C-Space>"] = cmp.mapping.complete(),
 })
+
 
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
@@ -30,6 +34,7 @@ cmp.setup({
 })
 
 require('mason').setup({})
+
 
 require('mason-lspconfig').setup({
   handlers = {

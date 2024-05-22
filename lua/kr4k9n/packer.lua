@@ -61,4 +61,7 @@ return require('packer').startup(function(use)
        "MunifTanjim/nui.nvim",
      }
    }
+
+	 -- nvim web devicons
+	 use 'nvim-tree/nvim-web-devicons'
 end)

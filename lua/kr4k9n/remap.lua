@@ -22,3 +22,6 @@ vim.keymap.set("n", "s-", "<C-w>-")
 vim.keymap.set("n", "s>", "<C-w>>")
 vim.keymap.set("n", "s<", "<C-w><")
 
+-- show preview document
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
+
