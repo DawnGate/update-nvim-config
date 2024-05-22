@@ -7,6 +7,9 @@ if not status then
 end
 
 neotree.setup({
+	window = {
+		position = "float",
+	},
 	filesystem = {
 		filtered_items = {
 			visible = true,
