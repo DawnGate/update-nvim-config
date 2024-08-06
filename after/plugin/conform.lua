@@ -12,6 +12,7 @@ conform.setup({
 		json = { "prettier" },
 		markdown = { "prettier" },
 		graphql = { "prettier" },
+		yaml = { "yamlfix" },
 	},
 })
 
