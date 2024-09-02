@@ -39,3 +39,7 @@ Install packer, :so to packer.lua and PackerSync for install
 
 - Not copy and paste, If still want it, install pbcopy from home brew
 - Clear current line: Ctrl + U, Ctrl + C
+
+# Item 2
+
+- Copy text in window, hold down button [Option] -> select text
