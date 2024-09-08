@@ -6,7 +6,6 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<tab>", ":tabnext<Return>")
 vim.keymap.set("n", "<s-tab>", ":tabprev<Return>")
 
-
 -- split window
 vim.keymap.set("n", "ss", ":split<Return>")
 vim.keymap.set("n", "sv", ":vsplit<Return>")
@@ -22,3 +21,8 @@ vim.keymap.set("n", "s-", "<C-w>-")
 vim.keymap.set("n", "s>", "<C-w>>")
 vim.keymap.set("n", "s<", "<C-w><")
 
+-- show preview document
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
+
+-- show float diagnostics
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { noremap = true, silent = true })
