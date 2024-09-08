@@ -34,6 +34,9 @@ Install packer, :so to packer.lua and PackerSync for install
 5. formatter and linter?
    - How it work?
    - https://www.josean.com/posts/neovim-linting-and-formatting
+6. github show log like a tree
+   - git log --graph --oneline --all
+   -
 
 # Tmux
 
