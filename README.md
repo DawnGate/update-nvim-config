@@ -23,3 +23,15 @@ Install packer, :so to packer.lua and PackerSync for install
 # Tmux
 - Not copy and paste, If still want it, install pbcopy from home brew
 - Clear current line: Ctrl + U, Ctrl + C
+
+# With config on Window terminal
+- Install ripgrep for ignore file with telescope
+
+# When start terminal with tmux and working with ssh agent
+- ssh-agent bash
+- ssh-add [file]
+
+# LSP
+- Docs in here with setting and key map
+https://github.com/VonHeikemen/lsp-zero.nvim
+- when you want to show errors diagnotics using [gl], when you want show definition [K]
