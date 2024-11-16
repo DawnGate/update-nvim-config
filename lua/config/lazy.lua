@@ -29,12 +29,3 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
--- Setup telescope
-local telescopeBuiltin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', telescopeBuiltin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', telescopeBuiltin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', telescopeBuiltin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', telescopeBuiltin.help_tags, { desc = 'Telescope help tags' })
-
-
--- Other setup

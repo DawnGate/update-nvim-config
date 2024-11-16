@@ -10,10 +10,14 @@ return {
 		require("neo-tree").setup({
 			filesystem = {
 				filtered_items = {
+					visible = true,
 					hide_hidden = false,
 				}
 			},
 			hijack_netrw_behavior = "open_default",
 		})
-	end	
+
+		-- config after setup
+		vim.keymap.set('n', '<leader>ft', ':Neotree toggle<Return>')
+	end,	
 }

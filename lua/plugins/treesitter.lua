@@ -1,6 +1,6 @@
 return {
 	'nvim-treesitter/nvim-treesitter',
-	build: ':TSUpdate',
+	build = ':TSUpdate',
 	config = function()
 			local configs = require("nvim-treesitter.configs")
 
@@ -13,9 +13,14 @@ return {
 						"vimdoc",
 						"query",
 						-- custom
+						"json",
 						"html",
 						"go",
-						"gitignore"
+						"gitignore",
+						"javascript",
+						"typescript",
+						"tsx",
+						"markdown",
 					},
           sync_install = false,
           highlight = { enable = true },
