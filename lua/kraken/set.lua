@@ -1,0 +1,34 @@
+vim.g.mapleader = " "
+
+-- setting for file always using utf-8 for save
+vim.scriptencoding = "utf-8"
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
+
+vim.opt.number = true
+
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
+vim.opt.hlsearch = true
+
+vim.opt.backup = false
+
+vim.opt.title = true
+
+
+vim.opt.showcmd = true
+vim.opt.cmdheight = 1
+
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.wrap = false
+vim.opt.smarttab = true
+
+-- disable mouse action
+vim.opt.mouse = ''
+
+-- update time for git gutter
+vim.opt.updatetime = 2000
+
+vim.opt.wildignore:append({ "*/node_modules/*" })
