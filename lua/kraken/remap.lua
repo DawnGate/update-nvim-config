@@ -16,7 +16,6 @@ vim.keymap.set("n", "<Right>", ":echoe 'Use l'<Return>")
 vim.keymap.set("n", "<Up>", ":echoe 'Use k'<Return>")
 vim.keymap.set("n", "<Down>", ":echoe 'Use j'<Return>")
 
-
 vim.keymap.set("n", "sh", "<C-w>h")
 vim.keymap.set("n", "sj", "<C-w>j")
 vim.keymap.set("n", "sk", "<C-w>k")

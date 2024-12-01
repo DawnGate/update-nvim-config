@@ -57,14 +57,50 @@ return {
 						capabilities = capabilities,
 					})
 				end,
+				["eslint"] = function()
+					nvim_lsp["eslint"].setup({
+						on_attach = on_attach,
+						capabilities = capabilities,
+					})
+				end,
 				["jsonls"] = function()
 					nvim_lsp["jsonls"].setup({
 						on_attach = on_attach,
 						capabilities = capabilities,
 					})
 				end,
-				["eslint"] = function()
-					nvim_lsp["eslint"].setup({
+				["gopls"] = function()
+					nvim_lsp["gopls"].setup({
+						on_attach = on_attach,
+						capabilities = capabilities,
+						settings = {
+							gopls = {
+								gofumpt = true,
+							},
+						},
+					})
+				end,
+				["lua_ls"] = function()
+					nvim_lsp["lua_ls"].setup({
+						on_attach = on_attach,
+						capabilities = capabilities,
+						settings = {
+							Lua = {
+								diagnostics = { globals = { "vim" } },
+							},
+						},
+					})
+				end,
+				["dockerls"] = function()
+					nvim_lsp["dockerls"].setup({
+						on_attach = on_attach,
+						capabilities = capabilities,
+					})
+				end,
+				-- use ':set filetype=yaml.docker-compose' for docker-compose.yml
+				-- to lsp can start working
+				["docker_compose_language_service"] = function()
+					nvim_lsp["docker_compose_language_service"].setup({
 						on_attach = on_attach,
 						capabilities = capabilities,
 					})

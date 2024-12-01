@@ -16,7 +16,6 @@ vim.opt.backup = false
 
 vim.opt.title = true
 
-
 vim.opt.showcmd = true
 vim.opt.cmdheight = 1
 
@@ -26,7 +25,10 @@ vim.opt.wrap = false
 vim.opt.smarttab = true
 
 -- disable mouse action
-vim.opt.mouse = ''
+vim.opt.mouse = ""
+
+-- copy to clipboard +y | +p
+vim.opt.clipboard = "unnamedplus"
 
 -- update time for git gutter
 vim.opt.updatetime = 2000

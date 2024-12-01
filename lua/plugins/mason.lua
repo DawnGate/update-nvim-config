@@ -16,6 +16,8 @@ return {
 				"jsonls",
 				"ts_ls",
 				"tailwindcss",
+				"gopls",
+				"lua_ls",
 			},
 		})
 
@@ -24,6 +26,8 @@ return {
 				"prettier",
 				"stylua", -- lua formatter
 				"eslint_d",
+				"gofumpt",
+				"goimports",
 			},
 		})
 	end,
