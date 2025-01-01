@@ -33,9 +33,22 @@ return {
 					})
 				end,
 				["ts_ls"] = function()
+					local mason_registry = require("mason-registry")
+					local vue_language_server_path = mason_registry
+						.get_package("vue-language-server")
+						:get_install_path() .. "/node_modules/@vue/language-server"
 					nvim_lsp["ts_ls"].setup({
 						on_attach = on_attach,
 						capabilities = capabilities,
+						init_options = {
+							plugins = {
+								{
+									name = "@vue/typescript-plugin",
+									location = vue_language_server_path,
+									languages = { "vue" },
+								},
+							},
+						},
 					})
 				end,
 				["cssls"] = function()
@@ -103,6 +116,23 @@ return {
 					nvim_lsp["docker_compose_language_service"].setup({
 						on_attach = on_attach,
 						capabilities = capabilities,
+					})
+				end,
+				["pylsp"] = function()
+					nvim_lsp["pylsp"].setup({
+						on_attach = on_attach,
+						capabilities = capabilities,
+					})
+				end,
+				["volar"] = function()
+					nvim_lsp["volar"].setup({
+						on_attach = on_attach,
+						capabilities = capabilities,
+						init_options = {
+							vue = {
+								hybridMode = false,
+							},
+						},
 					})
 				end,
 			})

@@ -32,3 +32,6 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover)
 
 -- show float diagnostics
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { noremap = true, silent = true })
+
+-- go to keywork definition, sometime it override by gopls, using <C-t> for go back to previous file
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition" })
