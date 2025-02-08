@@ -18,6 +18,7 @@ return {
 				"tailwindcss",
 				"gopls",
 				"lua_ls",
+				"pylsp",
 			},
 		})
 

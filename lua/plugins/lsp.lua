@@ -122,6 +122,12 @@ return {
 					nvim_lsp["pylsp"].setup({
 						on_attach = on_attach,
 						capabilities = capabilities,
+						settings = {
+							plugins = {
+								black = { enabled = true },
+								pylint = { enabled = true },
+							},
+						},
 					})
 				end,
 				["volar"] = function()
